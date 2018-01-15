@@ -14,8 +14,8 @@ app.set("host", "localhost");
 app.set("port", 8000);
 
 async function bootstrap() {
-	const server = await NestFactory.create(ApplicationModule, app);
-	await server.listen(app.get("port"));
+    const server = await NestFactory.create(ApplicationModule, app);
+    await server.listen(app.get("port"));
 };
 
 bootstrap();
